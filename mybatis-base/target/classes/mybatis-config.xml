@@ -6,7 +6,9 @@
     <!-- 环境配置 -->
     <environments default="development">
         <environment id="development">
+            <!-- 事务配置 -->
             <transactionManager type="JDBC"/>
+            <!-- 数据源 -->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
                 <property name="url" value='jdbc:mysql://localhost:3306/test?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC'/>

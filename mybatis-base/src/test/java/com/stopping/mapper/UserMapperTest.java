@@ -20,7 +20,7 @@ class UserMapperTest {
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
         //通过调用sqlSession封装的方法获取
         User user = new User();
-        user.setName("tom").setUsername("tom").setEmail("1111@cc.com").setPassword("123456");
+        user.setName("job").setUsername("job").setEmail("1123@cc.com").setPassword("123456");
         userMapper.insertUser(user);
         List<User> users = userMapper.selectUser();
         for (User u : users) {
