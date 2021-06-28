@@ -1,18 +1,18 @@
-package com.stopping.springmybatis;
+package com.stopping;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * SpringMybatisApplication 启动类
- * @author stopping
+ * @Description mybatisplus
+ * @Author stopping
+ * @date: 2021/6/28 22:45
  */
 @SpringBootApplication
-public class SpringMybatisApplication {
-
+@MapperScan("com.stopping.mapper")
+public class MybatisPlusApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringMybatisApplication.class, args);
+        SpringApplication.run(MybatisPlusApplication.class,args);
     }
-
 }
